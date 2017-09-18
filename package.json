@@ -1,0 +1,22 @@
+{
+  "name": "reg-number-webapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yanga93/reg-number-webapp.git"
+  },
+  "author": "Yanga Zukelwa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yanga93/reg-number-webapp/issues"
+  },
+  "homepage": "https://github.com/Yanga93/reg-number-webapp#readme",
+  "dependencies": {
+    "express": "^4.15.4"
+  }
+}

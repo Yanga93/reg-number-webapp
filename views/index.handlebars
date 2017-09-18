@@ -1,0 +1,40 @@
+<form class="form" action="/filter" method="post">
+  <div class="myClass"><br>
+    <div class="textField" align="center">
+      <div class="error">
+        {{messages.error}}
+      </div>
+      <div class="success">
+        {{messages.success}}
+      </div>
+      <br>
+      <input class="form-control" type="text" name="registration" placeholder="Type registration number here"></input>
+    <br>
+    <input id="btnGreet" class="btn btn-dark" type="submit" value="Add Number Plate"></input>
+    <br>
+    <br>
+
+</form>
+<form class="form" action="/filter" method="post">
+    <div id="radBtn" class="btn-group" data-toggle="buttons">
+      <label class="radio-inline btn btn-outline-dark" for="All">
+    <input type="radio"  name="num" value="">All</label>
+
+    <label class="radio-inline btn btn-outline-dark" for="Cape Town"><input type="radio"  name="num" value="CA">Cape Town</label>
+    <label class="radio-inline btn btn-outline-dark" for="Bellville"><input type="radio"  name="num" value="CY">Bellville</label>
+    <label class="radio-inline btn btn-outline-dark" for="Paarl"><input type="radio"  name="num" value="Ck">Malmesbury</label>
+  </div>
+
+<div align="center" class="">
+  <br>
+  <a href="/filter"><input id="btnGreet" class="btn btn-dark" type="submit" value="Filter"></input></a>
+</div>
+</form>
+<br>
+{{#each licenceNum}}
+  <li>{{registration}}</li>
+{{/each}}
+{{#each filtered}}
+  <li>{{registration}}</li>
+{{/each}}
+<br>
