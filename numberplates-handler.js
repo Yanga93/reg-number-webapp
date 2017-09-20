@@ -4,12 +4,13 @@ module.exports = function(models) {
 
   const index = function(req, res) {
 
-    models.numberPlate.find({}, function(err, results) {
+    models. numberPlate.find({}, function(err, results) {
       if (err) {
         return next(err);
       } else {
         res.render('index.handlebars', {
           licenceNum: results
+
         })
       }
     })
@@ -26,7 +27,7 @@ module.exports = function(models) {
       req.flash('error', 'Please enter Registration Number!')
       res.redirect('/')
     } else {
-      models.numberPlate.create(regNum, function(err, results) {
+      models. numberPlate.create(regNum, function(err, results) {
         if (err) {
           if (err.code === 11000) {
             req.flash('error',
