@@ -24,6 +24,7 @@ ul {
   justify-content: center;
   border-radius: 7px;
   font-family: cursive;
+  background-color: #ff9999;
 }
 
 .success {
@@ -33,6 +34,7 @@ ul {
   justify-content: center;
   border-radius: 7px;
   font-family: cursive;
+  background-color: #8cff66;
 }
 
 #carReg {
@@ -47,7 +49,7 @@ ul {
 
 li {
   display: inline-block;
-  background-color: yellow;
+  background-color: white;
   text-align: center;
   width: 13%;
   color: black;

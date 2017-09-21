@@ -24,20 +24,19 @@ module.exports = function(models) {
         2).toLowerCase()
     }
     if ((!regNum || !regNum.registration) || !plate) {
-      req.flash('error', 'Please enter Registration Number!')
+      req.flash('error', 'Please enter registration number!')
       res.redirect('/')
     } else {
       models. numberPlate.create(regNum, function(err, results) {
         if (err) {
           if (err.code === 11000) {
-            req.flash('error',
-              'You cannot add same registration number!')
+            req.flash('error', 'Registration number already exist!')
             res.redirect('/')
           } else {
             return next(err)
           }
         } else {
-          req.flash('success', 'Registration Number Added!')
+          req.flash('success', 'Registration number successfully added!')
           res.redirect('/')
         }
       })
