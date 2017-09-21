@@ -15,6 +15,9 @@
   "bugs": {
     "url": "https://github.com/Yanga93/reg-number-webapp/issues"
   },
+  "engines": {
+    "node": "*"
+  },
   "homepage": "https://github.com/Yanga93/reg-number-webapp#readme",
   "dependencies": {
     "express": "^4.15.4"
