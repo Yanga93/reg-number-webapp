@@ -20,6 +20,10 @@
   },
   "homepage": "https://github.com/Yanga93/reg-number-webapp#readme",
   "dependencies": {
-    "express": "^4.15.4"
+    "body-parser": "^1.18.1",
+    "express": "^4.15.4",
+    "express-handlebars": "^3.0.0",
+    "express-session": "^1.15.5",
+    "mongoose": "^4.11.12"
   }
 }
