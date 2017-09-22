@@ -53,7 +53,7 @@ Create a file called registration_number.css for your CSS. create a public folde
 
 This app has been deployed on heroku configured also datase on mlab
 
-* [registration_numbers_webapp](http://reg-num.herokuapp.com/) - Available
+* [registration_numbers_webapp](https://reg-numbers-webapp.herokuapp.com/) - Available
 
 ## Built With
 
