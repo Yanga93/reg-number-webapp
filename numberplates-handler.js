@@ -4,7 +4,7 @@ module.exports = function(models) {
 
   const index = function(req, res) {
 
-    models. numberPlate.find({}, function(err, results) {
+    models.numberPlate.find({}, function(err, results) {
       if (err) {
         return next(err);
       } else {
@@ -27,7 +27,7 @@ module.exports = function(models) {
       req.flash('error', 'Please enter registration number!')
       res.redirect('/')
     } else {
-      models. numberPlate.create(regNum, function(err, results) {
+      models.numberPlate.create(regNum, function(err, results) {
         if (err) {
           if (err.code === 11000) {
             req.flash('error', 'Registration number already exist!')
@@ -51,7 +51,6 @@ module.exports = function(models) {
         $options: "x"
       }
     }, function(err, results) {
-
       if (err) {
         return next(err);
       } else {
