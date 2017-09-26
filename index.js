@@ -39,7 +39,7 @@ app.use(session({
 }));
 
 app.use(flash());
-app.get('/', function(req,res){res.redirect('/')})
+// app.get('/', function(req,res){res.redirect('/')})
 app.get('/', regNumbersRoutes.index);
 app.post('/', regNumbersRoutes.createReg);
 app.get('/filter', regNumbersRoutes.filter);
